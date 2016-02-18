@@ -15,6 +15,7 @@
 		47323D571C756A9100D9D9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47323D551C756A9100D9D9EF /* LaunchScreen.storyboard */; };
 		47323D621C756A9100D9D9EF /* ApplePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47323D611C756A9100D9D9EF /* ApplePayDemoTests.m */; };
 		47323D6D1C756A9100D9D9EF /* ApplePayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47323D6C1C756A9100D9D9EF /* ApplePayDemoUITests.m */; };
+		47323D7E1C756D2900D9D9EF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47323D7D1C756D2900D9D9EF /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		47323D6C1C756A9100D9D9EF /* ApplePayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayDemoUITests.m; sourceTree = "<group>"; };
 		47323D6E1C756A9100D9D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47323D7A1C756AC800D9D9EF /* ApplePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayDemo.entitlements; sourceTree = "<group>"; };
+		47323D7D1C756D2900D9D9EF /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47323D7E1C756D2900D9D9EF /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 		47323D3B1C756A9100D9D9EF = {
 			isa = PBXGroup;
 			children = (
+				47323D7F1C756D3000D9D9EF /* Frameworks */,
 				47323D461C756A9100D9D9EF /* ApplePayDemo */,
 				47323D601C756A9100D9D9EF /* ApplePayDemoTests */,
 				47323D6B1C756A9100D9D9EF /* ApplePayDemoUITests */,
@@ -140,6 +144,14 @@
 				47323D6E1C756A9100D9D9EF /* Info.plist */,
 			);
 			path = ApplePayDemoUITests;
+			sourceTree = "<group>";
+		};
+		47323D7F1C756D3000D9D9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47323D7D1C756D2900D9D9EF /* PassKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +526,7 @@
 				47323D731C756A9100D9D9EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47323D741C756A9100D9D9EF /* Build configuration list for PBXNativeTarget "ApplePayDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				47323D761C756A9100D9D9EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47323D771C756A9100D9D9EF /* Build configuration list for PBXNativeTarget "ApplePayDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				47323D791C756A9100D9D9EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
