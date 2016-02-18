@@ -1,6 +1,9 @@
 # ApplePayDemo
 ApplePay调研及Demo
 
+只涉及ApplePay部分的实现，想真正实现支付还需要Server端配合解密 `token` 并且与银行谈合作或使用银联等的现有平台。  
+其实还是要使用其它平台一起搞的，平台列表： <https://developer.apple.com/apple-pay/> 下半部分的 `Get Started with a Payment Platform`
+
 ##Ref
 +   苹果官方主页 <https://developer.apple.com/apple-pay/>
 +   苹果官方资源 <https://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf>
