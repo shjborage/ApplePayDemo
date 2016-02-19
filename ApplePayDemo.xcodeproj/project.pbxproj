@@ -15,7 +15,6 @@
 		47323D571C756A9100D9D9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47323D551C756A9100D9D9EF /* LaunchScreen.storyboard */; };
 		47323D621C756A9100D9D9EF /* ApplePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47323D611C756A9100D9D9EF /* ApplePayDemoTests.m */; };
 		47323D6D1C756A9100D9D9EF /* ApplePayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47323D6C1C756A9100D9D9EF /* ApplePayDemoUITests.m */; };
-		47323D7E1C756D2900D9D9EF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47323D7D1C756D2900D9D9EF /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		47323D6C1C756A9100D9D9EF /* ApplePayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayDemoUITests.m; sourceTree = "<group>"; };
 		47323D6E1C756A9100D9D9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47323D7A1C756AC800D9D9EF /* ApplePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplePayDemo.entitlements; sourceTree = "<group>"; };
-		47323D7D1C756D2900D9D9EF /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47323D7E1C756D2900D9D9EF /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +146,6 @@
 		47323D7F1C756D3000D9D9EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47323D7D1C756D2900D9D9EF /* PassKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,10 +217,13 @@
 				TargetAttributes = {
 					47323D431C756A9100D9D9EF = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 5X5Q5656BE;
+						DevelopmentTeam = T67V6E6W9U;
 						SystemCapabilities = {
 							com.apple.OMC = {
 								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
 							};
 						};
 					};
@@ -438,9 +437,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ApplePayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SQ.ApplePayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saick.applepaydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "53e4182a-38a7-4d27-9ef0-05d8cb319a80";
 			};
 			name = Debug;
 		};
@@ -453,9 +452,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ApplePayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SQ.ApplePayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saick.applepaydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "53e4182a-38a7-4d27-9ef0-05d8cb319a80";
 			};
 			name = Release;
 		};
